@@ -1,10 +1,9 @@
 	public class rajamantri extends Activity 
 	{
 		@Override
-		public void onbackpressed()
+		public void onback()
 		{
 			
-
 			
 		}
 
@@ -23,7 +22,6 @@
 			dialog.setMessage("Are you sure you want to exit the game?");
 			dialog.setButton("Exit", new DialogInterface.OnClickListener() 
 			{
-				
 				public void onClick(DialogInterface dialog, int which) 
 				{
 					
@@ -56,15 +54,10 @@
 				
 				public void onClick(DialogInterface dialog, int which) 
 				{
-					
 					finish();
-					
 				}
 			});
-			
 			dialog.show();
-
-			
 			super.onLowMemory();
 		}
 
@@ -75,36 +68,20 @@
 			super.onPause();
 		}
 
-		String[] solutionArray = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
-		String[] playersArray = {"Player1", "Player2", "Player3", "Player4"};
-		static String player1_name = "" ;
-		static String player2_name = "";
-		static String player3_name = "";
-		static String player4_name = "";
-		static String player1_role = "";
-		static String player2_role = "";
-		static String player3_role = "";
-		static String player4_role = "";
+		String[] characters = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
+		String[] players = {"Player1", "Player2", "Player3", "Player4"};
+		static String player1_name = "",player2_name = "",player3_name = "",player4_name = "", player1_role = "",player2_role = "",player3_role = "",player4_role = "";
 		static boolean guess = false;
-		static String player1 = "";
-		static String player2 = "";
-		static String player3 = "";
+		static String player1 = "",player2 = "",player3 = "";
 		static String player4 = "";
-		static int i=0,j=0,k=0,l=0;
-		static int p1score = 0;
-		static int p2score = 0;
-		static int p3score = 0;
-		static int p4score = 0;
+		static int i=0,j=0,k=0,l=0, p1score = 0,p2score = 0,p3score = 0,p4score = 0;
 		int count = 0;
 		
 		Button btnRajaMantri;
 		Button btnHelp;
 		ImageView btn9;
 		Button btnPlay;
-		static Button btnPod1;
-		static Button btnPod2;
-		static Button btnPod3;
-		static Button btnPod4;
+		static Button btnPod1,btnPod2;,btnPod3,btnPod4;
 		Button btnShowResult;
 		Button btnRestart;
 		Button btnSignin;
@@ -356,29 +333,23 @@
 								Log.v("RajaMantri", "########## Player Name:" + player3_name +" Role:" + player3_role);
 								Log.v("RajaMantri", "########## Player Name:" + player4_name +" Role:" + player4_role);
 							}
-							
-							
 						}
 					});
-					 
-					 
-					 
+					 					 
 					}
-					 
-				 }
-				 
-				});
 				}
-
+			 });
+   		 }
+ 
 			
-			});
-			 
-		   
-		}
+	 });
+	 		 
+		    
+   }
 		
 		
-		public void makeGuess()
-		{
+	    public void makeGuess()
+	    {
 			
 			btnPlay.setText("SHUFFLE");
 			count = 0;
