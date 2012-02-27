@@ -33,10 +33,8 @@
 			{
 				
 				public void onClick(DialogInterface dialog, int which) 
-				{
-					
-					dialog.dismiss();
-					
+				{					
+					dialog.dismiss();					
 				}
 			});
 			dialog.show();
@@ -72,8 +70,7 @@
 		String[] players = {"Player1", "Player2", "Player3", "Player4"};
 		static String player1_name = "",player2_name = "",player3_name = "",player4_name = "", player1_role = "",player2_role = "",player3_role = "",player4_role = "";
 		static boolean guess = false;
-		static String player1 = "",player2 = "",player3 = "";
-		static String player4 = "";
+		static String player1 = "",player2 = "",player3 = "",player4 = "";
 		static int i=0,j=0,k=0,l=0, p1score = 0,p2score = 0,p3score = 0,p4score = 0;
 		int count = 0;
 		
@@ -148,8 +145,6 @@
 			p2score = 0;
 			p3score = 0;
 			p4score = 0;*/
-			
-			
 		}
 
 
