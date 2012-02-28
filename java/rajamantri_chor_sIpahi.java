@@ -4,7 +4,7 @@
 		public void onbackedit()
 		{
 			
-			
+			//nothing to do	
 		}
 
 		@Override
@@ -67,7 +67,7 @@
 		}
 
 		String[] characters = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
-		String[] players = {"Player1", "Player2", "Player3", "Player4"};
+		String[] players = {"Player1", "Player2", "Player3", "Player4"}; //player list
 		static String player1_name = "",player2_name = "",player3_name = "",player4_name = "", player1_role = "",player2_role = "",player3_role = "",player4_role = "";
 		static boolean guess = false;
 		static String player1 = "",player2 = "",player3 = "",player4 = "";
